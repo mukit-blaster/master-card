@@ -138,3 +138,42 @@ h5.name {
   font-size: 8px;
   margin-top: 15px;
 }
+
+
+@media only screen and (max-width: 600px) {
+ .container {
+ height: 200px;
+ width: 300px;
+ }
+ .front-face header,
+ .front-face .logo {
+ flex-direction: column;
+ align-items: center;
+ }
+ .front-face header {
+ justify-content: center;
+ }
+ .front-face .logo img {
+ width: 32px;
+ }
+ .front-face .card-details {
+ flex-direction: column;
+ }
+ .front-face .card-details .name-number,
+ .front-face .card-details .valid-date {
+ margin-top: 10px;
+ }
+ .card.back-face h6 {
+ font-size: 6px;
+ }
+ .card.back-face .magnetic-strip {
+ height: 35px;
+ }
+ .card.back-face .signature {
+ margin-top: 60px;
+ }
+ .card.back-face h5 {
+ font-size: 6px;
+ margin-top: 10px;
+ }
+ }
